@@ -15,7 +15,7 @@
       <!-- Sidebar -->
       <div class="sidebar">
         <a href="#" class="logo">
-          <i class='bx bxs-dashboard' ></i>
+          <i class="bx bxs-dashboard"></i>
           <div class="logo-name"><span>Odin</span>Dash</div>
         </a>
         <ul class="side-menu" id="stack-one">
@@ -55,21 +55,151 @@
         </ul>
       </div>
       <!-- End of Sidebar -->
+
       <!-- Navbar -->
       <div class="navbar">
-        <ul>
-          <li>New</li>
-          <li>Upload</li>
-          <li>Share</li>
-        </ul>
+        <i class="bx bx-menu"></i>
+        <form action="#" class="search">
+          <input type="text" placeholder="Search..." class="search-bar" />
+          <button type="submit" id="search-btn">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+
+        <!-- Top right of Nav -->
+        <div class="top-right-nav">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <i class="bx bx-bell"></i>
+          <img src="./photos/user.png" alt="profile picture" />
+        </div>
+
+        <!-- Notifications -->
       </div>
       <!-- End of Navbar -->
     </header>
+
     <!-- Dashboard Content -->
-    <div class="main-content">
-      <h1>content</h1>
-      <h3>test</h3>
-      <p>here</p>
+    <!-- Section 1 -->
+    <div class="main">
+      <div class="main-top">
+        <div class="left-main-top">
+          <p id="main-title">Dashboard</p>
+          <p>
+            <span class="analytics-text">Analytics</span> /
+            <span class="shop-text">Shop</span>
+          </p>
+        </div>
+        <button type="submit" class="btn-download">
+          <i class="bx bx-cloud-download"></i>Download CSV
+        </button>
+      </div>
+      <!-- Section 2 -->
+      <div class="main-mid">
+        <div class="container">
+          <div class="icon"><i class="bx bx-calendar-check"></i></div>
+          <div class="content">
+            <h2>1,074</h2>
+            <p>Paid Orders</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon"><i class="bx bx-show-alt"></i></div>
+          <div class="content">
+            <h2>1,074</h2>
+            <p>Paid Orders</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon"><i class="bx bx-line-chart"></i></div>
+          <div class="content">
+            <h2>1,074</h2>
+            <p>Paid Orders</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon"><i class="bx bx-dollar-circle"></i></div>
+          <div class="content">
+            <h2>1,074</h2>
+            <p>Paid Orders</p>
+          </div>
+        </div>
+      </div>
+      <!-- Third Section -->
+      <div class="lower-mid">
+        <!-- Recent Orders -->
+        <div class="orders">
+          <div class="orders-header">
+            <i class="bx bx-receipt"></i>
+            Recent Orders
+            <div class="orders-header-right">
+              <i class="bx bx-expand-horizontal"></i>
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="orders-content">
+            <div class="order-title">
+              <p id="user">User</p>
+              <p id="order-date">Order Date</p>
+              <p id="status">Status</p>
+            </div>
+            <div class="order-one">
+              <div class="user">
+                <img src="./photos/orders_users.png" alt="order user" />
+                <p>John Doe</p>
+              </div>
+              <div class="date">14-08-2023</div>
+              <div class="status">Completed</div>
+            </div>
+            <div class="order-two">
+              <div class="user">
+                <img src="./photos/orders_users.png" alt="order user" />
+                <p>John Doe</p>
+              </div>
+              <div class="date">14-08-2023</div>
+              <div class="status">Pending</div>
+            </div>
+            <div class="order-three">
+              <div class="user">
+                <img src="./photos/orders_users.png" alt="order user" />
+                <p>John Doe</p>
+              </div>
+              <div class="date">14-08-2023</div>
+              <div class="status">Processing</div>
+            </div>
+          </div>
+        </div>
+        <!-- Reminders -->
+        <div class="reminder">
+          <div class="reminder-header">
+            <i class="bx bx-list-check"></i>
+            Reminders
+            <div class="reminder-header-right">
+              <i class="bx bx-expand-horizontal"></i>
+              <i class="bx bx-plus"></i>
+            </div>
+          </div>
+          <div class="todo_container">
+            <div style="grid-column: 1/4" class="card" id="task1">
+              <i class='bx bx-check-circle' ></i>
+              <p>Meet with Kovu</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </div>
+            <div style="grid-column: 1/4" class="card" id="task2">
+              <i class='bx bx-check-circle' ></i>
+              <p>Coffee with Belle</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </div>
+            <div style="grid-column: 1/4" class="card" id="task3">
+              <i class='bx bx-check-circle' ></i>
+              <p>Check pull requests</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
